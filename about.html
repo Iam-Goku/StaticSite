@@ -32,7 +32,7 @@
                                     <i class="far fa-clock fa-2x icon-box"></i>
                                 </div>
                                 <div class="top-bar-text">
-                                    <h3>Opening Hour</h3>
+                                    <h5>Opening Hour</h5>
                                     <p>Mon - Fri, 8:00 - 9:00</p>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                     <i class="fa fa-phone-alt fa-2x icon-box"></i>
                                 </div>
                                 <div class="top-bar-text">
-                                    <h3>Call Us</h3>
+                                    <h5>Call Us</h5>
                                     <p>+012 345 6789</p>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                                     <i class="far fa-envelope fa-2x icon-box"></i>
                                 </div>
                                 <div class="top-bar-text">
-                                    <h3>Email Us</h3>
+                                    <h5>Email Us</h5>
                                     <p>info@example.com</p>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2>About Us</h2>
+                    <!-- <h2>About Us</h2> -->
                 </div>              
             </div>
         </div>
@@ -263,8 +263,8 @@
 
     <div class="footer">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-9">
                     <div class="footer-contact">
                         <h2>Get In Touch</h2>
                         <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
@@ -279,17 +279,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-9">
                     <div class="footer-link">
                         <h2>Popular Links</h2>
-                        <a href="about.html">About Us</a>
-                        <a href="contact.html">Contact Us</a>
-                        <a href="service.html">Our Service</a>
-                        <a href="location.html">Service Points</a>
-                        <a href="price.html">Pricing Plan</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Our Service</a>
+                        <a href="#">Service Points</a>
+                        <a href="#">Pricing Plan</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-9">
                     <div class="footer-link">
                         <h2>Useful Links</h2>
                         <a href="#">Terms of use</a>
@@ -298,23 +298,14 @@
                         <a href="#">Help</a>
                         <a href="#">FQAs</a>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-newsletter">
-                        <h2>Newsletter</h2>
-                        <form>
-                            <input class="form-control" placeholder="Full Name">
-                            <input class="form-control" placeholder="Email">
-                            <button class="btn btn-custom">Submit</button>
-                        </form>
-                    </div>
-                </div>
+                </div>    
             </div>
         </div>
         <div class="container-fluid copyright">
-            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+            <!-- <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
         </div>
     </div>
+
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
@@ -331,3 +322,22 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+<script>
+    // Show the button when scrolling down
+    window.addEventListener("scroll", function () {
+      const btn = document.querySelector(".back-to-top");
+      if (window.scrollY > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    });
+  
+    // Scroll to top when clicked
+    document.querySelector(".back-to-top").addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  
