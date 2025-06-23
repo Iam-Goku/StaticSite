@@ -328,15 +328,17 @@ h1, h2, h3 {
     object-fit: cover;
 }
 
-#homeCarousel .carousel-item {
-    height: 50%;
+#homeCarousel .carousel-inner,
+#homeCarousel .carousel-item,
+#homeCarousel .carousel-item img {
+  height: 100%;
 }
 
 #homeCarousel {
-    width: 93%;
+    width: 97.4%;
     overflow: hidden;
     height: 400px;
-    left: 3.3%;
+    left: 1.3%;
 }
 
 .section-header p {
