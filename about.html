@@ -76,17 +76,7 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link active">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Price</a>
-                        <a href="location.html" class="nav-item nav-link">Washing Points</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Detail Page</a>
-                                <a href="team.html" class="dropdown-item">Team Member</a>
-                                <a href="booking.html" class="dropdown-item">Schedule Booking</a>
-                            </div>
-                        </div>
+                        <a href="product.html" class="nav-item nav-link">Products</a>                      
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ml-auto">
@@ -304,6 +294,11 @@
         </div>
     </div>
 
+    <div>
+        <a href="https://wa.me/" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+        </a>
+    </div>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
@@ -318,15 +313,19 @@
 </html>
 
 <script>
-    // Show the button when scrolling down
+   // Show the button when scrolling down
     window.addEventListener("scroll", function () {
-      const btn = document.querySelector(".back-to-top");
-      if (window.scrollY > 200) {
-        btn.style.display = "block";
-      } else {
-        btn.style.display = "none";
-      }
-    });
+    const backToTopBtn = document.querySelector(".back-to-top");
+    const whatsappBtn = document.querySelector(".whatsapp-float");
+
+    if (window.scrollY > 200) {
+      backToTopBtn.style.display = "block";
+      whatsappBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+      whatsappBtn.style.display = "none";
+    }
+  });
   
     // Scroll to top when clicked
     document.querySelector(".back-to-top").addEventListener("click", function (e) {
