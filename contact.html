@@ -12,7 +12,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="css/Style.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="top-bar">
         <div class="container-fluid">
@@ -22,9 +21,15 @@
                         <a href="index.html" class="text-decoration-none text-dark">
                             <!-- <h1>KRI<span> Nano Detailing</span></h1> -->
                             <img src="img/logo.jpg" alt="Logo" class="img-fluid d-none d-md-block" style="max-width: 200px; height: auto;">
-                        </a>
-                    </div>
+                        </a>                      
+                    </div>                  
                 </div>
+                <!-- <div>
+                    <video autoplay loop muted playsinline style="max-width: 200px; height: auto;">
+                        <source src="icons/car-detailing.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div> -->
                 <div class="col-lg-8 col-md-7 d-none d-lg-block">
                     <div class="row">
                         <div class="col-4">
@@ -34,7 +39,7 @@
                                 </div>
                                 <div class="top-bar-text">
                                     <h5>Opening Hour</h5>
-                                    <p>Mon - Fri, 8:00 - 9:00</p>
+                                    <p>Mon - Sat, 8:00 - 5:00</p>
                                 </div>
                             </div>
                         </div>
@@ -78,10 +83,10 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="product.html" class="nav-item nav-link">Products</a>                      
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="product.html" class="nav-item nav-link">Products</a>             
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     </div>
                     <div class="ml-auto">
                         <a class="btn btn-custom" href="#">Get Appointment</a>
@@ -90,172 +95,76 @@
             </nav>
         </div>
     </div>
-
-    <div class="page-header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <!-- <h2>About Us</h2> -->
-                </div>              
-            </div>
-        </div>
+  <!-- Contact Header -->
+  <div class="container my-5">
+    <div class="section-header text-center">
+      <p class="display-6 fw-bold">Contact Us</p>
+      <h2>We’d love to hear from you. Reach out via the form or our details below.</h2>
     </div>
+  </div>
 
-    <div class="about">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-img">
-                        <img src="img/about.jpg" alt="Image" class="img-fluid" />
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-header text-left">
-                        <p class="display-6 fw-bold">About Us</p>
-                        <h2>Car Detailing</h2>
-                    </div>
-                    <div class="about-content">
-                        <p>
-                          At KRI, we’re committed to delivering the highest standard of automotive care with a focus 
-                          on innovation, quality, and long-lasting results. Specializing in nano detailing, ceramic coating,
-                           and professional car care services, we help preserve and protect your vehicle — inside and out.
-                        </p>
-                        <ul>
-                            <li><i class="far fa-check-circle"></i> Nano Detailing</li>
-                            <li><i class="far fa-check-circle"></i> Ceramic Coating</li>
-                            <li><i class="far fa-check-circle"></i> Paint Correction</li>
-                            <li><i class="far fa-check-circle"></i> Interior Detailing</li>
-                            <li><i class="far fa-check-circle"></i> Headlight Restoration</li>
-                            <li><i class="far fa-check-circle"></i> Engine Bay Cleaning</li>
-                        </ul>
-                        <a class="btn btn-custom" href="#">Learn More</a>
-                    </div>
-                </div>
-            </div>
+  <!-- Contact Info and Form -->
+  <div class="container mb-5">
+    <div class="row g-5">
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+        <div class="bg-light p-4 rounded shadow-sm h-100">
+          <h3 class="mb-4">Our Contact Information</h3>
+          <p><i class="fas fa-map-marker-alt me-2 "></i>Colombo, Sri Lanka</p>
+          <p><i class="fas fa-phone me-2"></i></p>
+          <p><i class="fas fa-envelope me-2"></i>info@krinanodetailing.com</p>
+          <div class="mt-4">
+            <a href="#" class="btn  me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn  me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn "><i class="fab fa-whatsapp"></i></a>
+          </div>
         </div>
-    </div>
-
-    <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-user"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">350</h3>
-                            <p>Engineers & Workers</p>
-                        </div>
-                    </div>
+      </div>
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div class="p-4 border rounded shadow-sm h-100">
+          <h3 class="mb-4">Send Us a Message</h3>
+            <form action="https://formspree.io/f/mwpbjdgb" method="POST">
+                <div class="control-group mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-users"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">1500</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
+                <div class="control-group mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-check"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">5000</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                    </div>
+                <div class="control-group mb-3">
+                    <textarea name="message" class="form-control" placeholder="Description" required></textarea>
                 </div>
-            </div>
+                <div>
+                    <button class="btn btn-custom" type="submit">Send Request</button>
+                </div>
+            </form>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="team">
-        <div class="container-fluid">
-            <div class="section-header text-center">
-                <p>Meet Our Team</p>
-                <h2>Our Engineers & Workers</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-1.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Donald John</h2>
-                            <p>Engineer</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-2.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Adam Phillips</h2>
-                            <p>Engineer</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-3.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Thomas Olsen</h2>
-                            <p>Worker</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-4.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>James Alien</h2>
-                            <p>Worker</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Google Map -->
+  <div class="container mb-5">
+    <div class="ratio ratio-16x9 rounded shadow-sm">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63327.75990683071!2d79.83800583937459!3d6.927078800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596f9d5d32c7%3A0x7ec3e87f9a417cc7!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1689732893886!5m2!1sen!2slk"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
     </div>
+  </div>
 
-    <div class="footer">
+ <div class="footer">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-lg-4 col-md-9">
                     <div class="footer-contact">
                         <h2>Get In Touch</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone"></i>+012 345 67890</p>
+                        <p><i class="fa fa-map-marker-alt"></i>Colombo</p>
+                        <p><i class="fa fa-phone"></i>Sri Lanka</p>
                         <p><i class="fa fa-envelope"></i>info@krinanodetailing.com</p>
                         <div class="footer-social">
                             <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
@@ -272,7 +181,6 @@
                         <a href="#">About Us</a>
                         <a href="#">Contact Us</a>
                         <a href="#">Our Service</a>
-                        <a href="#">Service Points</a>
                         <a href="#">Pricing Plan</a>
                     </div>
                 </div>
@@ -298,16 +206,20 @@
             <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
         </a>
     </div>
-
+<div>
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
+</div>
     <div id="loader" class="show">
         <div class="loader"></div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+
+<div id="form-status" style="display:none;" class="alert alert-success mt-3">
+  Thank you! Your request has been sent.
+</div>
+
 </body>
 </html>
 
@@ -328,10 +240,47 @@
       logo.style.display = "none";
     }
   });
+  
     // Scroll to top when clicked
     document.querySelector(".back-to-top").addEventListener("click", function (e) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+    
+    //Animation
+    lottie.loadAnimation({
+    container: document.getElementById('animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'icons/car-detailing.gif' 
+  });
+
+//mail send confirmation
+ const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    if (response.ok) {
+      form.reset();
+      status.style.display = 'block';
+      status.classList.remove('alert-danger');
+      status.classList.add('alert-success');
+      status.textContent = 'Thank you! Your request has been sent.';
+    } else {
+      status.style.display = 'block';
+      status.classList.remove('alert-success');
+      status.classList.add('alert-danger');
+      status.textContent = 'Oops! There was a problem submitting your form.';
+    }
+  });
   </script>
-  

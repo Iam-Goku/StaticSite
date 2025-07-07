@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
     <link href="css/Style.css" rel="stylesheet">
 </head>
 
@@ -20,18 +19,11 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-12">
                     <div class="logo">
-                        <a href="index.html" class="text-decoration-none text-dark">
-                            <!-- <h1>KRI<span> Nano Detailing</span></h1> -->
-                            <img src="img/logo.jpg" alt="Logo" class="img-fluid" style="max-width: 200px; height: auto;">
+                        <a href="index.html" class="text-decoration-none text-dark">                         
+                            <img src="img/logo.jpg" alt="Logo" class="img-fluid d-none d-md-block" style="max-width: 200px; height: auto;">
                         </a>                      
                     </div>                  
                 </div>
-                <!-- <div>
-                    <video autoplay loop muted playsinline style="max-width: 200px; height: auto;">
-                        <source src="icons/car-detailing.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
-                </div> -->
                 <div class="col-lg-8 col-md-7 d-none d-lg-block">
                     <div class="row">
                         <div class="col-4">
@@ -48,7 +40,7 @@
                         <div class="col-4">
                             <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
                                 <div class="top-bar-icon">
-                                    <i class="fa fa-phone-alt fa-2x icon-box"></i>
+                                    <i class="fa fa-phone fa-2x icon-box"></i>
                                 </div>
                                 <div class="top-bar-text">
                                     <h5>Call Us</h5>
@@ -76,6 +68,7 @@
     <div class="nav-bar sticky-top">
         <div>
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <img src="img/logo.jpg" id="sticky-logo" alt="Logo" class="img-fluid " style="display: none; max-width: 10%; height: 20%;">
                 <a href="#" class="navbar-brand d-md-none">MENU</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -162,7 +155,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="section-header text-left">
-                        <p>About Us</p>
+                        <p class="display-6 fw-bold">About Us</p>
                         <h2>Car Detailing</h2>
                     </div>
                     <div class="about-content">
@@ -415,15 +408,15 @@
                 <div class="col-lg-12">
                     <div class="location-form text-center">
                         <h3>Request for a car Detailing</h3>
-                        <form>
+                       <form action="https://formspree.io/f/mwpbjdgb" method="POST">
                             <div class="control-group mb-3">
-                                <input type="text" class="form-control" placeholder="Name" required="required">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
                             </div>
                             <div class="control-group mb-3">
-                                <input type="email" class="form-control" placeholder="Email" required="required">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required>
                             </div>
                             <div class="control-group mb-3">
-                                <textarea class="form-control" placeholder="Description" required="required"></textarea>
+                                <textarea name="message" class="form-control" placeholder="Description" required></textarea>
                             </div>
                             <div>
                                 <button class="btn btn-custom" type="submit">Send Request</button>
@@ -494,7 +487,7 @@
                     <div class="footer-contact">
                         <h2>Get In Touch</h2>
                         <p><i class="fa fa-map-marker-alt"></i>Colombo</p>
-                        <p><i class="fa fa-phone-alt"></i>Sri Lanka</p>
+                        <p><i class="fa fa-phone"></i>Sri Lanka</p>
                         <p><i class="fa fa-envelope"></i>info@krinanodetailing.com</p>
                         <div class="footer-social">
                             <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
@@ -545,6 +538,11 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+
+<div id="form-status" style="display:none;" class="alert alert-success mt-3">
+  Thank you! Your request has been sent.
+</div>
+
 </body>
 </html>
 
@@ -553,13 +551,16 @@
     window.addEventListener("scroll", function () {
     const backToTopBtn = document.querySelector(".back-to-top");
     const whatsappBtn = document.querySelector(".whatsapp-float");
+    const logo = document.getElementById("sticky-logo");
 
     if (window.scrollY > 200) {
       backToTopBtn.style.display = "block";
       whatsappBtn.style.display = "block";
+      logo.style.display = "block";
     } else {
       backToTopBtn.style.display = "none";
       whatsappBtn.style.display = "none";
+      logo.style.display = "none";
     }
   });
   
@@ -569,13 +570,32 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
     
-    //Animation
-    lottie.loadAnimation({
-    container: document.getElementById('animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'icons/car-detailing.gif' 
+//mail send confirmation
+ const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    if (response.ok) {
+      form.reset();
+      status.style.display = 'block';
+      status.classList.remove('alert-danger');
+      status.classList.add('alert-success');
+      status.textContent = 'Thank you! Your request has been sent.';
+    } else {
+      status.style.display = 'block';
+      status.classList.remove('alert-success');
+      status.classList.add('alert-danger');
+      status.textContent = 'Oops! There was a problem submitting your form.';
+    }
   });
   </script>
   

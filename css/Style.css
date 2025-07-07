@@ -23,7 +23,7 @@ a {
     }
 
 h1, h2, h3 {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .container {
@@ -345,7 +345,6 @@ h1, h2, h3 {
 
 .section-header p {
     color:  #ad291f; /*#ff6f00*/
-    font-size: 20px;
     font-weight: bold;
 }
 
@@ -353,7 +352,7 @@ h1, h2, h3 {
     color:  #ad291f; /*#ff6f00*/
 }
 
-.fa-clock, .fa-phone-alt, .fa-envelope,.fa-map-marker-alt {
+.fa-clock, .fa-phone, .fa-envelope,.fa-map-marker-alt {
     color:  #ad291f; /*#ff6f00*/
 }
 
@@ -413,4 +412,31 @@ h1, h2, h3 {
     width: 30px;
     height: 30px;
   }
-  
+  .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
