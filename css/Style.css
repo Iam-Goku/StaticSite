@@ -312,7 +312,13 @@ h1, h2, h3 {
     object-fit: cover; /* makes image fill without distortion */
     height: 50%;
     width: 50%;
-    object-fit: cover;
+   
+}
+
+#homeCarousel .vid{
+  border-radius: 20px;
+  height: 99%;
+  object-fit: cover;
 }
 
 #homeCarousel .carousel-inner,
