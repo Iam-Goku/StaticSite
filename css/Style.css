@@ -166,15 +166,21 @@ h1, h2, h3 {
     }
 
 /* Price Plans */
-.price-item {
-    background: #fff;
-    border: 1px solid #eee;
-    padding: 30px 20px;
-    text-align: center;
-    border-radius: 8px;
-    transition: 0.3s ease;
+.price-item,.service-item {
+ background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
 }
 
+.price-item:hover,.service-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-color: #ad291f; /* Bootstrap's info color */
+}
     .price-item.featured-item {
         border: 2px solid  #ad291f; /*#ff6f00*/
     }
@@ -192,6 +198,9 @@ h1, h2, h3 {
         .price-item ul li {
             padding: 5px 0;
         }
+.price-header:hover h3 {
+  color: #ad291f;
+}
 
 .location{
     background: #f4f1f1;
@@ -340,7 +349,7 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-.fa-check-circle {
+.fa-check-circle,.icon-custom-color {
     color:  #ad291f; /*#ff6f00*/
 }
 
