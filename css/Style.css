@@ -6,10 +6,17 @@
 }
 
 body {
-    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Barlow', sans-serif; */
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
+}
+
+.card-title  {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 700;
 }
 
 a {
