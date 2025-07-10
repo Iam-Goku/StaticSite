@@ -353,6 +353,7 @@ h1, h2, h3 {
 .section-header p {
     color:  #ad291f; /*#ff6f00*/
     font-weight: bold;
+    margin-top: 1%;
 }
 
 .fa-check-circle,.icon-custom-color {
