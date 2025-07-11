@@ -3,6 +3,9 @@
 const body = document.body;
 const toggle = document.getElementById('darkModeToggle');
 
+// Default to dark mode
+body.classList.add('dark-mode');
+
 if (toggle) {
   // Load saved preference
   if (localStorage.getItem('darkMode') === 'enabled') {
