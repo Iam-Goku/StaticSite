@@ -460,13 +460,13 @@ h1, h2, h3 {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
   }
   
-
+/*Whatsapp Icon*/
   .whatsapp-float {
     position :fixed;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     bottom: 150px;
-    right: 30px;
+    right: 37px;
     background-color: #25D366;
     color: white;
     border-radius: 50%;
