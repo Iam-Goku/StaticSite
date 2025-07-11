@@ -72,7 +72,7 @@
     </div>
   <!-- Navigation Bar -->
   <div class="nav-bar sticky-top">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <img src="img/logo.jpg" id="sticky-logo" alt="Logo" class="img-fluid " style="display: none; max-width: 10%; height: 20%;">
       <a href="index.html" class="navbar-brand d-md-none">MENU</a>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -87,9 +87,13 @@
           <a href="product.html" class="nav-item nav-link active">Products</a>
           <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        <div class="ml-auto">
-          <a class="btn btn-custom" href="#">Get Appointment</a>
-        </div>
+         <label class="toggle-switch-icon">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider">
+              <i class="fas fa-sun sun-icon"></i>
+              <i class="fas fa-moon moon-icon"></i>
+          </span>
+          </label>
       </div>
     </nav>
   </div>
@@ -148,43 +152,58 @@
           </div>
         </div>
       </div>
-            <!-- Product 6 -->
-      <!-- <div class="col-lg-3 col-md-6 mb-4">
+      <!-- Product 6 -->
+    <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img src="img/MicrosFiber.webp" class="card-img-top" alt="Product 4">
+          <img src="img/NC.png" class="card-img-top" alt="Product 4">
           <div class="card-body text-center">
-            <h5 class="card-title">Microfiber Cloth</h5>
+            <h5 class="card-title">Nano Coating</h5>
+          </div>
+        </div> 
+      </div> 
+      <!-- Product 7 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/ATSP.png" class="card-img-top" alt="Product 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Tire Super Poish</h5>
           </div>
         </div>
-      </div> -->
-                  <!-- Product 7 -->
-      <!-- <div class="col-lg-3 col-md-6 mb-4">
+      </div>
+      <!-- Product 8 -->
+      <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img src="img/CeramicSet.webp" class="card-img-top" alt="Product 4">
+          <img src="img/AIC.png" class="card-img-top" alt="Product 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Advanced Interior Cleaner</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Product 8 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/L&T.png" class="card-img-top" alt="Product 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Leather & Dashboard Protection</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/ACS.png" class="card-img-top" alt="Product 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Advanced Car Shampoo</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/CC.png" class="card-img-top" alt="Product 4">
           <div class="card-body text-center">
             <h5 class="card-title">Ceramic Coating</h5>
           </div>
         </div>
-      </div> -->
-                  <!-- Product 8 -->
-      <!-- <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img src="img/MicroFiberMitt.webp" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Microfiber Mitt</h5>
-          </div>
-        </div>
-      </div> -->
-            <!-- Product 8 -->
-      <!-- <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img src="img/EZCeramic.webp" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Easy to Use</h5>
-          </div>
-        </div>
-      </div> -->
-
+      </div>
     </div>
   </div>
 
@@ -241,29 +260,7 @@
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript/main.js"></script>
 
-  <script>
-    // Show the button when scrolling down
-    window.addEventListener("scroll", function () {
-    const backToTopBtn = document.querySelector(".back-to-top");
-    const whatsappBtn = document.querySelector(".whatsapp-float");
-    const logo = document.getElementById("sticky-logo");
-
-    if (window.scrollY > 200) {
-      backToTopBtn.style.display = "block";
-      whatsappBtn.style.display = "block";
-      logo.style.display = "block";
-    } else {
-      backToTopBtn.style.display = "none";
-      whatsappBtn.style.display = "none";
-      logo.style.display = "none";
-    }
-  });
-
-    document.querySelector(".back-to-top").addEventListener("click", function (e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
 </body>
 </html>
