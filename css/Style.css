@@ -584,3 +584,109 @@ h1, h2, h3 {
 .toggle-switch-icon input:checked + .slider {
   background-color: #4caf50;
 }
+
+/*Service Video Style*/
+
+/* Animation for the modal */
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 0;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    animation: slideUp 0.3s;
+    position: relative;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideUp {
+    from { transform: translateY(50px); }
+    to { transform: translateY(0); }
+  }
+
+/*Service hover*/
+/* Video hover effect */
+.video-hover-effect {
+    transition: all 0.3s ease;
+}
+
+/* Gradient shadow overlay on hover */
+.video-trigger:hover .video-hover-effect {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Play icon (hidden by default) */
+/* Service item styling */
+.service-item {
+    transition: all 0.3s ease;
+    overflow: hidden; /* Ensures rounded corners work with absolute positioning */
+  }
+  
+  /* Play icon styling */
+  .play-icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(240, 172, 172, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+  }
+  
+  .play-icon-wrapper i {
+    color: #333;
+    font-size: 18px;
+    margin-left: 3px; 
+    margin-top: 15px;
+  }
+  
+  /* Hover effects */
+  .video-trigger:hover .service-item {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-trigger:hover .play-icon-wrapper {
+    opacity: 1; /* Show on hover */
+  }

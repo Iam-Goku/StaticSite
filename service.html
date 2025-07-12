@@ -106,48 +106,65 @@
         </div>
 
         <div class="row g-5 align-items-stretch">
-            <div class="col-md-6">
-                <div class="service-item">
+            <div class="col-md-6 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
+                <div class="service-item position-relative p-4 rounded">
                     <h4 class="fw-semibold"><i class="fas fa-microscope icon-custom-color me-2"></i>  Nano Detailing</h4>
                     <p>Precision cleaning and protection at the microscopic level, restoring your vehicle’s original shine.</p>
+                <div class="play-icon-wrapper">
+                <i class="fas fa-play"></i>
                 </div>
             </div>
-
-            <div class="col-md-6">
-                <div class="service-item">
+            </div>
+            <div class="col-md-6 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
+                <div class="service-item position-relative p-4 rounded">
                     <h4 class="fw-semibold"><i class="fas fa-tint icon-custom-color me-2"></i>  Ceramic Coating</h4>
                     <p>A durable, hydrophobic layer that protects your paint from UV rays, scratches, and contaminants while enhancing gloss.</p>
+                <div class="play-icon-wrapper">
+                <i class="fas fa-play"></i>
                 </div>
             </div>
+            </div>
 
-            <div class="col-md-6">
-                <div class="service-item">
+            <div class="col-md-6 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
+                <div class="service-item position-relative p-4 rounded">
                     <h4 class="fw-semibold"><i class="fas fa-spray-can icon-custom-color me-2"></i>  Paint Correction</h4>
                     <p>Elimination of swirl marks, light scratches, and oxidation for a flawless, mirror-like finish.</p>
+                <div class="play-icon-wrapper">
+                <i class="fas fa-play"></i>
                 </div>
             </div>
+            </div>
 
-            <div class="col-md-6">
-                <div class="service-item">
+            <div class="col-md-6 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
+                <div class="service-item position-relative p-4 rounded">
                     <h4 class="fw-semibold"><i class="fas fa-solid fa-car icon-custom-color me-2"></i>  Interior Detailing</h4>
                     <p>Deep cleaning and conditioning of all interior surfaces, including leather, fabric, and plastic.</p>
+                <div class="play-icon-wrapper">
+                <i class="fas fa-play"></i>
                 </div>
             </div>
-
-            <div class="col-md-6">
-                <div class="service-item">
-                    <h4 class="fw-semibold"><i class="fas fa-lightbulb icon-custom-color me-2"></i>  Headlight Restoration</h4>
-                    <p>Clarity and performance restoration for dull or yellowed headlights.<br><br></p>
-                </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="service-item">
+            <div class="col-md-6 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
+                <div class="service-item position-relative p-4 rounded">
+                  <h4 class="fw-semibold"><i class="fas fa-lightbulb icon-custom-color me-2"></i> Headlight Restoration</h4>
+                  <p>Clarity and performance restoration for dull or yellowed headlights.<br><br></p>            
+                  <div class="play-icon-wrapper">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-md-6 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
+                <div class="service-item position-relative p-4 rounded">
                     <h4 class="fw-semibold"><i class="fas fa-cogs icon-custom-color me-2"></i>  Engine Bay Cleaning</h4>
                     <p>Safe and thorough cleaning to keep your engine looking as good as it runs.</p>
+               <div class="play-icon-wrapper">
+                    <i class="fas fa-play"></i>
+                  </div>
                 </div>
             </div>
-        </div>
+
     </div>
 
   <div class="footer">
@@ -199,6 +216,21 @@
         <a href="https://wa.me/971558503647" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
             <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
         </a>
+    </div>
+
+    <!--Service common video modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+            <div class="ratio ratio-16x9">
+                <!-- <iframe id="videoFrame" src="img/HeadlighRestore.mp4" title="Video" allow="autoplay; encrypted-media" allowfullscreen> -->
+                    <iframe id="dynamicVideoFrame" src="" allowfullscreen></iframe>
+                </iframe>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

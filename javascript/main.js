@@ -49,6 +49,8 @@ if (toggle) {
  const form = document.getElementById('contact-form');
   const status = document.getElementById('form-status');
 
+  const submitButton = document.getElementById("submit-button"); // or querySelector()
+  if (submitButton) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(form);
@@ -72,5 +74,27 @@ if (toggle) {
       status.textContent = 'Oops! There was a problem submitting your form.';
     }
   });
-
+  }
+  //Service Video Modal
   
+  $(document).ready(function() {
+    // When a video trigger is clicked
+    $('.video-trigger').click(function() {
+      // Get the video source from the clicked div's data attribute
+      const videoSrc = $(this).data('video-src');
+      
+      // Update the iframe's src with the correct video
+      $('#dynamicVideoFrame').attr('src', videoSrc);
+      
+      // Optional: Autoplay the video when modal opens
+      // Note: Many browsers block autoplay without user interaction
+      $('#videoModal').on('shown.bs.modal', function() {
+        $('#dynamicVideoFrame')[0].src += "?autoplay=1";
+      });
+      
+      // Reset video when modal closes (stops playback)
+      $('#videoModal').on('hide.bs.modal', function() {
+        $('#dynamicVideoFrame').attr('src', '');
+      });
+    });
+  });
