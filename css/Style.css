@@ -79,7 +79,9 @@ body.dark-mode .btn:hover {
   border-color: #666;
 }
 
-
+.card{
+  border-color: #e82424;
+}
 
 .card-title  {
     font-family: 'Roboto', sans-serif;
