@@ -33,14 +33,19 @@ body.dark-mode {
 /* Example for headings and paragraphs */
 body.dark-mode h1,
 body.dark-mode h2,
-body.dark-mode h3,
+body.dark-mode h3
 body.dark-mode a {
   color: #f1f1f1;
 }
 
+body.dark-mode .work-info h4 {
+  color: #1e1e1e;
+}
+
 /* Example for sections or containers */
 body.dark-mode .section,
-body.dark-mode .container {
+body.dark-mode .container,
+body.dark-mode .container-fluid {
   background-color: #1e1e1e;
   color: #f1f1f1;
 }
@@ -150,16 +155,18 @@ h1, h2, h3 {
     }
 
 .btn-custom {
-    background-color: #ad291f; /*#ff6f00*/
-    color: #fff;
+    background-color: #fff; /*#ff6f00*/
+    color: #ad291f;
+    border-color: #ad291f;
     padding: 8px 20px;
     border-radius: 4px;
     font-weight: 600;
 }
 
     .btn-custom:hover {
-        background-color:  #ad291f; /*#ff6f00*/
-        color: #fff;
+        background-color:  #fff; /*#ff6f00*/
+        border-color: #ad291f;
+        color: #ad291f;
     }
 
  Carousel 
@@ -722,3 +729,73 @@ h1, h2, h3 {
     .video-trigger:hover .prodcut-play-icon-wrapper {
     opacity: 1; /* Show on hover */
   }
+
+  /* Our Work Page :start */
+
+          .work-categories {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .work-categories .btn {
+            margin: 5px;
+            border-radius: 20px;
+        }
+        .work-item {
+            position: relative;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px #0c0c0c00;
+            transition: all 0.3s ease;
+        }
+        .work-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .work-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .work-info {
+            padding: 15px;
+            background: #fff;
+        }
+        .work-info h4 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .work-info p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .work-play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 24px;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        .work-item:hover .work-play-icon {
+            opacity: 1;
+        }
+        .before-after {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .before-after img {
+            width: 50%;
+        }
+
+  /* Our work Page :end */
