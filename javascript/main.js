@@ -46,35 +46,14 @@ if (toggle) {
     });
     
 //mail send confirmation
- const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
-
-  const submitButton = document.getElementById("submit-button"); // or querySelector()
-  if (submitButton) {
-  form.addEventListener('submit', async (e) => {
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
-    const data = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-    if (response.ok) {
-      form.reset();
-      status.style.display = 'block';
-      status.classList.remove('alert-danger');
-      status.classList.add('alert-success');
-      status.textContent = 'Thank you! Your request has been sent.';
-    } else {
-      status.style.display = 'block';
-      status.classList.remove('alert-success');
-      status.classList.add('alert-danger');
-      status.textContent = 'Oops! There was a problem submitting your form.';
-    }
+    emailjs.sendForm("service_652um7a", "template_v4lmseg", this)
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert("Failed to send message."));
   });
-  }
+
+
   //Service Video Modal
   
   $(document).ready(function() {
