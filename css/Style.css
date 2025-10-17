@@ -33,7 +33,7 @@ body.dark-mode {
 /* Example for headings and paragraphs */
 body.dark-mode h1,
 body.dark-mode h2,
-body.dark-mode h3
+body.dark-mode h3,
 body.dark-mode a {
   color: #f1f1f1;
 }
@@ -68,7 +68,7 @@ body.dark-mode .btn {
 body.dark-mode  .location h3,
 .location p, .service-item,
 .contactcont{
-    color:#333;
+    color:#9b9292;
 }
 
 body.dark-mode .contactcont h3{
