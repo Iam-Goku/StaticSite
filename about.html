@@ -1,319 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/Style.css" rel="stylesheet">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>About | KRI Nano Detailing</title>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="description" content="About KRI Nano Detailing - premium car detailing, ceramic coating and paint correction experts." />
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JS -->
+    <script src="javascript/main.js" defer></script>
 </head>
 
 <body>
-    <div class="top-bar">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-12">
-                    <div class="logo">
-                        <a href="index.html" class="text-decoration-none text-dark">
-                            <!-- <h1>KRI<span> Nano Detailing</span></h1> -->
-                            <img src="img/logo.jpg" alt="Logo" class="img-fluid d-none d-md-block" style="max-width: 200px; height: auto;">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-clock fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Opening Hour</h5>
-                                    <p>Mon - Fri, 8:00 - 9:00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="fa fa-phone fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Call Us</h5>
-                                    <p>+971 558503647</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-envelope fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Email Us</h5>
-                                    <p>info@krinanodetailing.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="nav-bar sticky-top">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <img src="img/logo.jpg" id="sticky-logo" alt="Logo" class="img-fluid " style="display: none; max-width: 10%; height: 20%;">
-                <a href="#" class="navbar-brand d-md-none">MENU</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<!-- NAVBAR -->
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 navbar-glass">
+        <div class="max-w-7xl mx-auto px-6">
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="product.html" class="nav-item nav-link">Products</a>    
-                        <!-- <a href="ourwork.html" class="nav-item nav-link">Our Work</a>                   -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <label class="toggle-switch-icon">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider">
+            <div class="flex items-center justify-between py-4">
+
+                <a href="#">
+                    <img src="img/logo.jpg"
+                         class="h-20 rounded-2xl"
+                         alt="logo">
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav class="hidden md:flex items-center gap-8 font-semibold uppercase text-sm">
+
+                <a href="./index.html">Home</a>
+                <a href="./about.html" class="theme-text">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./product.html">Products</a>
+                <a href="./contact.html">Contact</a>
+
+                </nav>
+
+                <div class="flex items-center gap-4">
+
+                    <!-- THEME TOGGLE -->
+                   <div class="theme-toggle" id="themeToggle">
                         <i class="fas fa-sun sun-icon"></i>
                         <i class="fas fa-moon moon-icon"></i>
-                    </span>
-                    </label>
-                </div>
-            </nav>
-        </div>
-    </div>
+                    </div>
 
-    <div class="page-header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <!-- <h2>About Us</h2> -->
-                </div>              
+                    <!-- BOOK BUTTON -->
+                    <a href="./contact.html"
+                       class="hidden md:inline-flex px-6 py-3 rounded-full btn-theme font-bold">
+                        Book Now
+                    </a>
+
+                    <!-- MOBILE BUTTON -->
+                    <button id="menuBtn"
+                            class="md:hidden text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                </div>
+
             </div>
-        </div>
-    </div>
 
-    <div class="about">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-img">
-                        <img src="img/about.jpg" alt="Image" class="img-fluid" />
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-header text-left">
-                        <p class="display-6 fw-bold">About Us</p>
-                        <h2>Car Detailing</h2>
-                    </div>
-                    <div class="about-content">
-                        <p>
-                          At KRI, we’re committed to delivering the highest standard of automotive care with a focus 
-                          on innovation, quality, and long-lasting results. Specializing in nano detailing, ceramic coating,
-                           and professional car care services, we help preserve and protect your vehicle — inside and out.
-                        </p>
-                        <ul>
-                            <li><i class="far fa-check-circle"></i> Nano Detailing</li>
-                            <li><i class="far fa-check-circle"></i> Ceramic Coating</li>
-                            <li><i class="far fa-check-circle"></i> Paint Correction</li>
-                            <li><i class="far fa-check-circle"></i> Interior Detailing</li>
-                            <li><i class="far fa-check-circle"></i> Headlight Restoration</li>
-                            <li><i class="far fa-check-circle"></i> Engine Bay Cleaning</li>
-                        </ul>
-                        <a class="btn btn-custom" href="#">Learn More</a>
-                    </div>
-                </div>
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu"
+                 class="mobile-menu flex-col gap-5 py-5 md:hidden">
+
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./product.html">Products</a>
+                <a href="./contact.html">Contact</a>
+
+                <a href="./contact.html"
+                   class="btn-theme py-3 rounded-full text-center font-bold">
+                    Book Now
+                </a>
+
             </div>
+
         </div>
+    </header>
+
+<!-- HERO -->
+<section class="relative h-[60vh] flex items-center justify-center section-dark section-spacing">
+
+    <div class="text-center">
+        <p class="theme-text uppercase tracking-[5px] mb-3">About Us</p>
+
+        <h1 class="text-5xl md:text-6xl font-black">
+            Premium Car Care Experts
+        </h1>
+
+        <p class="text-muted mt-4 max-w-2xl mx-auto">
+            Delivering nano detailing, ceramic coating, and paint correction with perfection.
+        </p>
     </div>
 
-    <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-user"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">50</h3>
-                            <p>Engineers & Workers</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-users"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">100+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-check"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">150+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                    </div>
-                </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section-spacing">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <img src="img/about.jpg" class="rounded-3xl shadow-xl" />
+
+        <div>
+
+            <p class="theme-text font-bold uppercase tracking-[5px]">
+                Who We Are
+            </p>
+
+            <h2 class="text-4xl font-black mt-3 mb-6">
+                Driven by Perfection
+            </h2>
+
+            <p class="text-muted mb-6 leading-relaxed">
+                At KRI Nano Detailing, we specialize in premium automotive care with a focus on innovation, precision, and long-lasting protection.
+            </p>
+
+            <div class="space-y-3 text-lg">
+                <p>✔ Nano Detailing</p>
+                <p>✔ Ceramic Coating</p>
+                <p>✔ Paint Correction</p>
+                <p>✔ Interior Detailing</p>
             </div>
+
+            <a href="./service.html" class="inline-block mt-8 px-8 py-3 rounded-full btn-theme font-bold">
+                Explore Services
+            </a>
+
         </div>
+
     </div>
 
-    <!-- <div class="team">
-        <div class="container-fluid">
-            <div class="section-header text-center">
-                <p>Meet Our Team</p>
-                <h2>Our Engineers & Workers</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-1.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Donald John</h2>
-                            <p>Engineer</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-2.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Adam Phillips</h2>
-                            <p>Engineer</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-3.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Thomas Olsen</h2>
-                            <p>Worker</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-4.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>James Alien</h2>
-                            <p>Worker</p>
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+</section>
 
-    <div class="footer">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-contact">
-                        <h2>Get In Touch</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>  Colombo, Sri Lanka</p>
-                        <p><i class="fa fa-phone"></i>   +971 558503647</p>
-                        <p><i class="fa fa-envelope"></i>  info@krinanodetailing.com</p>
-                        <div class="footer-social">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                            <a class="btn" href="https://www.instagram.com/krinanodetailing?igsh=amVqcjIzYmQ3YTR6"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-link">
-                        <h2>Popular Links</h2>
-                        <a href="about.html">About Us</a>
-                        <a href="service.html">Service</a>
-                        <a href="product.html">Products</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-link">
-                        <h2>Useful Links</h2>
-                        <a href="#">Terms of use</a>
-                        <a href="#">Privacy policy</a>
-                        <a href="#">Cookies</a>
-                        <a href="#">Help</a>
-                        <a href="#">FQAs</a>
-                    </div>
-                </div>    
-            </div>
+<!-- FACTS -->
+<section class="section-spacing section-dark">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+
+        <div class="glass-card">
+            <i class="fa fa-users text-5xl theme-text mb-4"></i>
+            <h3 class="text-4xl font-black">100+</h3>
+            <p class="text-muted">Happy Clients</p>
         </div>
-        <div class="container-fluid copyright">
-            <!-- <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
+
+        <div class="glass-card">
+            <i class="fa fa-car text-5xl theme-text mb-4"></i>
+            <h3 class="text-4xl font-black">150+</h3>
+            <p class="text-muted">Cars Detailed</p>
         </div>
+
+        <div class="glass-card">
+            <i class="fa fa-check text-5xl theme-text mb-4"></i>
+            <h3 class="text-4xl font-black">99%</h3>
+            <p class="text-muted">Satisfaction</p>
+        </div>
+
     </div>
 
-    <div>
-        <a href="https://wa.me/971558503647" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
-        </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-dark section-spacing">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+        <img src="img/logo.jpg" class="h-20 mx-auto mb-6 rounded-xl" />
+
+        <p class="text-muted max-w-xl mx-auto mb-6">
+            Premium automotive detailing specialists delivering long-lasting shine and protection.
+        </p>
+
+        <p class="text-muted">© 2026 KRI Nano Detailing</p>
+
     </div>
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</footer>
 
-    <div id="loader" class="show">
-        <div class="loader"></div>
-    </div>
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script src="javascript/main.js"></script>
+<!-- WHATSAPP -->
+<a href="https://wa.me/971558503647" class="whatsapp-float">
+    <i class="fab fa-whatsapp text-white"></i>
+</a>
 
 </body>
 </html>

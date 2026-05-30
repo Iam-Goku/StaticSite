@@ -5,238 +5,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact KRI Nano Detailing</title>
-    <meta name="description" content="Get in touch with us to schedule your car detailing service or ask any questions. We’re here to help.">
-    <meta name="keywords" content="KRI Nano Detailing, kri, krinanodetailing, car detailing, ceramic coating, paint correction, Dubai, kri nanodetailing, krinano detailing">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="description" content="Get in touch with KRI Nano Detailing for premium car detailing services in UAE and Sri Lanka.">
+    <meta name="keywords" content="car detailing, ceramic coating, nano detailing, Dubai, KRI Nano Detailing">
 
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/Style.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-    emailjs.init("PpclARCLmhZqxrZ5w");
-    </script>
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
+    <!-- JS -->
+    <script src="javascript/main.js" defer></script>
 </head>
-<body>
-    <div class="top-bar">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-12">
-                    <div class="logo">
-                        <a href="index.html" class="text-decoration-none text-dark">
-                            <!-- <h1>KRI<span> Nano Detailing</span></h1> -->
-                            <img src="img/logo.jpg" alt="Logo" class="img-fluid d-none d-md-block" style="max-width: 200px; height: auto;">
-                        </a>                      
-                    </div>                  
-                </div>
-                <!-- <div>
-                    <video autoplay loop muted playsinline style="max-width: 200px; height: auto;">
-                        <source src="icons/car-detailing.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
-                </div> -->
-                <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-clock fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Opening Hour</h5>
-                                    <p>Mon - Sat, 8:00 - 5:00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="fa fa-phone fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Call Us</h5>
-                                    <p>+971 558503647</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-envelope fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Email Us</h5>
-                                    <p>info@krinanodetailing.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="nav-bar sticky-top">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <img src="img/logo.jpg" id="sticky-logo" alt="Logo" class="img-fluid " style="display: none; max-width: 10%; height: 20%;">
-                <a href="#" class="navbar-brand d-md-none">MENU</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body class="dark-mode">
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="product.html" class="nav-item nav-link">Products</a>    
-                        <!-- <a href="ourwork.html" class="nav-item nav-link">Our Work</a>          -->
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>                      
-                    </div>
-                    <label class="toggle-switch-icon">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider">
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 navbar-glass">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex items-center justify-between py-4">
+
+                <a href="#">
+                    <img src="img/logo.jpg"
+                         class="h-20 rounded-2xl"
+                         alt="logo">
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav class="hidden md:flex items-center gap-8 font-semibold uppercase text-sm">
+
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./product.html">Products</a>
+                <a href="./contact.html">Contact</a>
+
+                </nav>
+
+                <div class="flex items-center gap-4">
+
+                    <!-- THEME TOGGLE -->
+                   <div class="theme-toggle" id="themeToggle">
                         <i class="fas fa-sun sun-icon"></i>
                         <i class="fas fa-moon moon-icon"></i>
-                    </span>
-                    </label>
-                </div>
-            </nav>
-        </div>
-    </div>
-  <!-- Contact Header -->
-  <div class="container my-5">
-    <div class="section-header text-center">
-      <p class="display-6 fw-bold">Contact Us</p>
-      <h2>We’d love to hear from you. Reach out via the form or our details below.</h2>
-    </div>
-  </div>
-
-  <!-- Contact Info and Form -->
-  <div class="container mb-5">
-    <div class="row g-5">
-      <!-- Contact Info -->
-      <div class="col-lg-5 contactcont">
-        <div class="bg-light p-4 rounded shadow-sm h-100">
-          <h3 class="mb-4">Our Contact Information</h3>
-          <p><i class="fas fa-map-marker-alt me-2 "></i>Colombo, Sri Lanka</p>
-          <p><i class="fas fa-phone me-2"></i>+971 558503647</p>
-          <p><i class="fas fa-envelope me-2"></i>info@krinanodetailing.com</p>
-          <div class="mt-4">
-            <a href="#" class="btn  me-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/krinanodetailing?igsh=amVqcjIzYmQ3YTR6" class="btn  me-2"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="btn "><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- Contact Form -->
-      <div class="col-lg-7">
-        <div class="p-4 border rounded shadow-sm h-100">
-          <h3 class="mb-4">Send Us a Message</h3>
-            <form id="contact-form">
-                <div class="control-group mb-3">
-                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
-                <div class="control-group mb-3">
-                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                </div>
-                <div class="control-group mb-3">
-                    <textarea name="message" class="form-control" placeholder="Description" required></textarea>
-                </div>
-                <div>
-                    <button class="btn btn-custom" type="submit">Send Request</button>
-                </div>
-            </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Google Map -->
-  <div class="container mb-5">
-    <div class="ratio ratio-16x9 rounded shadow-sm">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63327.75990683071!2d79.83800583937459!3d6.927078800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596f9d5d32c7%3A0x7ec3e87f9a417cc7!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1689732893886!5m2!1sen!2slk"
-        width="600"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
-
-    <div class="footer">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-contact">
-                        <h2>Get In Touch</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>  Colombo, Sri Lanka</p>
-                        <p><i class="fa fa-phone"></i>   +971 558503647</p>
-                        <p><i class="fa fa-envelope"></i>  info@krinanodetailing.com</p>
-                        <div class="footer-social">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                            <a class="btn" href="https://www.instagram.com/krinanodetailing?igsh=amVqcjIzYmQ3YTR6"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
                     </div>
+
+                    <!-- BOOK BUTTON -->
+                    <a href="./contact.html"
+                       class="hidden md:inline-flex px-6 py-3 rounded-full btn-theme font-bold">
+                        Book Now
+                    </a>
+
+                    <!-- MOBILE BUTTON -->
+                    <button id="menuBtn"
+                            class="md:hidden text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
                 </div>
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-link">
-                        <h2>Popular Links</h2>
-                        <a href="about.html">About Us</a>
-                        <a href="service.html">Service</a>
-                        <a href="product.html">Products</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-link">
-                        <h2>Useful Links</h2>
-                        <a href="#">Terms of use</a>
-                        <a href="#">Privacy policy</a>
-                        <a href="#">Cookies</a>
-                        <a href="#">Help</a>
-                        <a href="#">FQAs</a>
-                    </div>
-                </div>    
+
             </div>
+
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu"
+                 class="mobile-menu flex-col gap-5 py-5 md:hidden">
+
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./product.html">Products</a>
+                <a href="./contact.html" class="theme-text">Contact</a>
+
+                <a href="./contact.html"
+                   class="btn-theme py-3 rounded-full text-center font-bold">
+                    Book Now
+                </a>
+
+            </div>
+
         </div>
-        <div class="container-fluid copyright">
-            <!-- <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
+    </header>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 section-dark">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+        <p class="theme-text uppercase tracking-[5px] font-semibold mb-3">
+            Contact Us
+        </p>
+
+        <h1 class="text-5xl md:text-6xl font-black mb-4">
+            Let’s Talk About Your Car
+        </h1>
+
+        <p class="text-muted max-w-2xl mx-auto">
+            Book your detailing service or ask us anything. We respond quickly.
+        </p>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section-spacing">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+
+        <!-- INFO -->
+        <div class="glass-card space-y-6">
+
+            <h2 class="text-3xl font-black mb-6">Contact Information</h2>
+
+            <div class="flex gap-4 items-start">
+                <i class="fa fa-map-marker-alt text-2xl theme-text"></i>
+                <div>
+                    <h4 class="font-bold">Location</h4>
+                    <p class="text-muted">Colombo, Sri Lanka / UAE</p>
+                </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+                <i class="fa fa-phone text-2xl theme-text"></i>
+                <div>
+                    <h4 class="font-bold">Phone</h4>
+                    <p class="text-muted">+971 558503647</p>
+                </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+                <i class="fa fa-envelope text-2xl theme-text"></i>
+                <div>
+                    <h4 class="font-bold">Email</h4>
+                    <p class="text-muted">info@krinanodetailing.com</p>
+                </div>
+            </div>
+
         </div>
-    </div>
 
-    <div>
-        <a href="https://wa.me/971558503647" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
-        </a>
-    </div>
-<div>
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-</div>
-    <div id="loader" class="show">
-        <div class="loader"></div>
-    </div>
+        <!-- FORM -->
+        <div class="glass-card">
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+            <form id="contact-form" class="space-y-5">
 
-<div id="form-status" style="display:none;" class="alert alert-success mt-3">
-  Thank you! Your request has been sent.
-</div>
-    <script src="javascript/main.js"></script>
+                <input type="text"
+                       name="name"
+                       placeholder="Your Name"
+                       class="w-full px-5 py-4 rounded-2xl outline-none">
+
+                <input type="email"
+                       name="email"
+                       placeholder="Your Email"
+                       class="w-full px-5 py-4 rounded-2xl outline-none">
+
+                <textarea name="message"
+                          rows="6"
+                          placeholder="Your Message"
+                          class="w-full px-5 py-4 rounded-2xl outline-none"></textarea>
+
+                <button type="submit"
+                        class="w-full py-4 rounded-2xl btn-theme font-bold">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- MAP -->
+<section class="section-spacing section-dark">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="rounded-2xl overflow-hidden">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63327.75990683071!2d79.83800583937459!3d6.927078800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596f9d5d32c7%3A0x7ec3e87f9a417cc7!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1689732893886!5m2!1sen!2slk"
+                class="w-full h-[400px]"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-dark section-spacing">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+        <img src="img/logo.jpg" class="h-20 mx-auto mb-6 rounded-xl">
+
+        <p class="text-muted mb-6">
+            Premium car detailing services in UAE & Sri Lanka
+        </p>
+
+        <p class="text-muted">© 2026 KRI Nano Detailing</p>
+
+    </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/971558503647"
+   class="whatsapp-float"
+   target="_blank">
+    <i class="fab fa-whatsapp text-white"></i>
+</a>
+
 </body>
 </html>

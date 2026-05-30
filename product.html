@@ -4,323 +4,273 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <title>Products | KRI Nano Detailing</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Premium car care products by KRI Nano Detailing including shampoos, coatings, cleaners and detailing tools.">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/Style.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="javascript/main.js" defer></script>
 </head>
+
 <body>
-        <div class="top-bar">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-12">
-                    <div class="logo">
-                        <a href="index.html" class="text-decoration-none text-dark">
-                            <!-- <h1>KRI<span> Nano Detailing</span></h1> -->
-                            <img src="img/logo.jpg" alt="Logo" class="img-fluid d-none d-md-block" style="max-width: 200px; height: auto;">
-                        </a>                      
-                    </div>                  
-                </div>
-                <!-- <div>
-                    <video autoplay loop muted playsinline style="max-width: 200px; height: auto;">
-                        <source src="icons/car-detailing.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
-                </div> -->
-                <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-clock fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Opening Hour</h5>
-                                    <p>Mon - Sat, 8:00 - 5:00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="fa fa-phone fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Call Us</h5>
-                                    <p>+971 558503647</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-envelope fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Email Us</h5>
-                                    <p>info@krinanodetailing.com</p>
-                                </div>
-                            </div>
-                        </div>
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 navbar-glass">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex items-center justify-between py-4">
+
+                <a href="#">
+                    <img src="img/logo.jpg"
+                         class="h-20 rounded-2xl"
+                         alt="logo">
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav class="hidden md:flex items-center gap-8 font-semibold uppercase text-sm">
+
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./product.html" class="theme-text">Products</a>
+                <a href="./contact.html">Contact</a>
+
+                </nav>
+
+                <div class="flex items-center gap-4">
+
+                    <!-- THEME TOGGLE -->
+                   <div class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
                     </div>
+
+                    <!-- BOOK BUTTON -->
+                    <a href="./contact.html"
+                       class="hidden md:inline-flex px-6 py-3 rounded-full btn-theme font-bold">
+                        Book Now
+                    </a>
+
+                    <!-- MOBILE BUTTON -->
+                    <button id="menuBtn"
+                            class="md:hidden text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
                 </div>
+
             </div>
-        </div>
-    </div>
-  <!-- Navigation Bar -->
-  <div class="nav-bar sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <img src="img/logo.jpg" id="sticky-logo" alt="Logo" class="img-fluid " style="display: none; max-width: 10%; height: 20%;">
-      <a href="index.html" class="navbar-brand d-md-none">MENU</a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="navbar-nav mr-auto">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link">Service</a>
-          <a href="product.html" class="nav-item nav-link active">Products</a>
-          <!-- <a href="ourwork.html" class="nav-item nav-link">Our Work</a> -->
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-         <label class="toggle-switch-icon">
-          <input type="checkbox" id="darkModeToggle">
-          <span class="slider">
-              <i class="fas fa-sun sun-icon"></i>
-              <i class="fas fa-moon moon-icon"></i>
-          </span>
-          </label>
-      </div>
-    </nav>
-  </div>
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu"
+                 class="mobile-menu flex-col gap-5 py-5 md:hidden">
 
-  <!-- Page Header -->
-   <div class="section-header text-center">
-        <p class="display-6">Our Products</p>
-        <h2>Premium car care products</h2>
-    </div>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./product.html">Products</a>
+                <a href="./contact.html">Contact</a>
 
-  <!-- Products Section -->
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/ACS.webp" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Advanced Car Shampoo</h5>
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
+                <a href="./contact.html"
+                   class="btn-theme py-3 rounded-full text-center font-bold">
+                    Book Now
+                </a>
+
+            </div>
+
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/ATSP.png" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Tire Super Polish</h5>
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div>
-      </div> 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/AIC.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/AIC.png" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Advanced Interior Cleaner</h5>
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/L&T.png" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Leather & Dashboard Protection</h5>
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/APC.webp" class="card-img-top" alt="Product 1">
-          <div class="card-body text-center">
-            <h5 class="card-title">All Purpose Cleaner</h5> 
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/CeramicCompound.webp" class="card-img-top" alt="Product 2">
-          <div class="card-body text-center">
-            <h5 class="card-title">Ceramic Compound</h5>  
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-         <div class="card h-100 video-trigger" data-video-src="img/MaxSpray.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/MaxSprayWax.webp" class="card-img-top" alt="Product 3">
-          <div class="card-body text-center">
-            <h5 class="card-title">Max SprayWax</h5>  
-          </div>
-          <div class="prodcut-play-icon-wrapper">
+    </header>
+
+<!-- HERO -->
+<section class="section-spacing section-dark text-center">
+
+    <p class="theme-text uppercase tracking-[5px] font-semibold mb-3">
+        Our Products
+    </p>
+
+    <h1 class="text-5xl font-black">
+        Premium Car Care Products
+    </h1>
+
+</section>
+
+<!-- PRODUCTS GRID -->
+<section class="section-spacing">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+
+        <!-- PRODUCT -->
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/CommingSoon.mp4">
+
+            <div class="play-icon">
                 <i class="fas fa-play"></i>
             </div>
+
+            <img src="img/ACS.webp" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Advanced Car Shampoo</h5>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/NanoGlassSet.webp" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Nano GlassSet</h5>
-          </div>
-            <div class="prodcut-play-icon-wrapper">
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/CommingSoon.mp4">
+
+            <div class="play-icon">
                 <i class="fas fa-play"></i>
             </div>
-        </div>
-      </div>
-    <div class="col-lg-3 col-md-6 mb-4">
-         <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/MicroFiber.jpeg" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Micro Fiber Cloth</h5>
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div> 
-      </div> 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/Cearamic.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/CC.png" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Ceramic Coating</h5>
-          </div>
-           <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/buffingpad.png" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Car Buffing Pad</h5>
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div>
-      </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100 video-trigger" data-video-src="img/CommingSoon.mp4" data-bs-toggle="modal" data-bs-target="#videoModal" style="cursor: pointer;">
-          <img src="img/ClayBar.png" class="card-img-top" alt="Product 4">
-          <div class="card-body text-center">
-            <h5 class="card-title">Car Clay Bar</h5>
-          </div>
-          <div class="prodcut-play-icon-wrapper">
-                <i class="fas fa-play"></i>
-           </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
+            <img src="img/ATSP.png" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Tire Super Polish</h5>
+        </div>
 
-    <div class="footer">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-contact">
-                        <h2>Get In Touch</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>  Colombo, Sri Lanka</p>
-                        <p><i class="fa fa-phone"></i>   +971 558503647</p>
-                        <p><i class="fa fa-envelope"></i>  info@krinanodetailing.com</p>
-                        <div class="footer-social">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                            <a class="btn" href="https://www.instagram.com/krinanodetailing?igsh=amVqcjIzYmQ3YTR6"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-9">
-                   <div class="footer-link">
-                        <h2>Popular Links</h2>
-                        <a href="about.html">About Us</a>
-                        <a href="service.html">Service</a>
-                        <a href="product.html">Products</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-link">
-                        <h2>Useful Links</h2>
-                        <a href="#">Terms of use</a>
-                        <a href="#">Privacy policy</a>
-                        <a href="#">Cookies</a>
-                        <a href="#">Help</a>
-                        <a href="#">FQAs</a>
-                    </div>
-                </div>    
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/AIC.mp4">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
             </div>
+
+            <img src="img/AIC.png" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Interior Cleaner</h5>
         </div>
-        <div class="container-fluid copyright">
-            <!-- <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/CommingSoon.mp4">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/L&T.png" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Leather Protection</h5>
         </div>
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/CommingSoon.mp4">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/APC.webp" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">All Purpose Cleaner</h5>
+        </div>
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/CeramicCompound.webp">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/CeramicCompound.webp" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Ceramic Compound</h5>
+        </div>
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/MaxSpray.mp4">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/MaxSprayWax.webp" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Max Spray Wax</h5>
+        </div>
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/CommingSoon.mp4">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/NanoGlassSet.webp" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Nano Glass Set</h5>
+        </div>
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/CommingSoon.mp4">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/MicroFiber.jpeg" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Micro Fiber Cloth</h5>
+        </div>
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/Cearamic.mp4">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/CC.png" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Ceramic Coating</h5>
+        </div>
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/CommingSoon.mp4">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/buffingpad.png" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Buffing Pad</h5>
+        </div>
+
+        <div class="glass-card video-trigger cursor-pointer" data-video-src="img/ClayBar.png">
+
+            <div class="play-icon">
+                <i class="fas fa-play"></i>
+            </div>
+
+            <img src="img/ClayBar.png" class="rounded-xl mb-4">
+            <h5 class="font-bold text-center">Clay Bar</h5>
+        </div>
+
     </div>
 
-    <div>
-    <a href="https://wa.me/971558503647" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
-    </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-dark section-spacing">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+        <img src="img/logo.jpg" class="h-20 mx-auto mb-6 rounded-xl" />
+
+        <p class="text-muted max-w-xl mx-auto mb-6">
+            Premium car care products designed for professional detailing results.
+        </p>
+
+        <p class="text-muted">© 2026 KRI Nano Detailing</p>
+
+    </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/971558503647" class="whatsapp-float">
+    <i class="fab fa-whatsapp text-white"></i>
+</a>
+
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-70 z-50">
+
+    <div class="bg-white dark:bg-[#1e1e1e] p-4 rounded-2xl w-[90%] md:w-[60%]">
+
+<iframe id="dynamicVideoFrame"
+        class="w-full aspect-video rounded-xl"
+        allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
+
+    </div>
+
 </div>
-
-    <!--Service common video modal -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-body">
-            <div class="ratio ratio-16x9">
-                <!-- <iframe id="videoFrame" src="img/HeadlighRestore.mp4" title="Video" allow="autoplay; encrypted-media" allowfullscreen> -->
-                    <iframe id="dynamicVideoFrame" src="" allowfullscreen></iframe>
-                </iframe>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-
-  <!-- Back to Top -->
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script src="javascript/main.js"></script>
 
 </body>
 </html>

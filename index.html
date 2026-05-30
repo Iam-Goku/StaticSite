@@ -1,554 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>KRI Nano Detailing</title>
-    <meta name="description" content="Expert car detailing services including ceramic coating, paint correction, and interior cleaning. Book your appointment today.">
-    <meta name="keywords" content="KRI Nano Detailing,kri, krinanodetailing, car detailing, ceramic coating, paint correction, Dubai, kri nanodetailing, krinano detailing">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="description" content="Expert car detailing services including ceramic coating, paint correction, and interior cleaning." />
 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/Style.css" rel="stylesheet">
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-    emailjs.init("PpclARCLmhZqxrZ5w");
-    </script>
-    
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "KRI Nano Detailing",
-        "url": "https://www.krinanodetailing.com/",
-        "logo": "https://www.krinanodetailing.com/img/logo.png",
-        "image": {
-            "@type": "ImageObject",
-            "url": "https://www.krinanodetailing.com/img/logo.png",
-            "height": "512",
-            "width": "512"
-        }
-        }
-</script>
-</script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <script src="javascript/main.js" defer></script>
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
+
 <body>
-    <div class="top-bar">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-md-12">
-                    <div class="logo">
-                        <a href="index.html" class="text-decoration-none text-dark">                         
-                            <img src="img/logo.jpg" alt="Logo" class="img-fluid d-none d-md-block" style="max-width: 200px; height: auto;">
-                        </a>                      
-                    </div>                  
-                </div>
-                <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-clock fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Opening Hour</h5>
-                                    <p>Mon - Sat, 8:00 - 5:00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="fa fa-phone fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Call Us</h5>
-                                    <p>+971 558503647</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item" style="display: flex; align-items: center; gap: 10px;">
-                                <div class="top-bar-icon">
-                                    <i class="far fa-envelope fa-2x icon-box"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h5>Email Us</h5>
-                                    <p>info@krinanodetailing.com</p>
-                                </div>
-                            </div>
-                        </div>                                              
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="nav-bar sticky-top">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <img src="img/logo.jpg" id="sticky-logo" alt="Logo" class="img-fluid " style="display: none; max-width: 10%; height: 20%;">
-                <a href="#" class="navbar-brand d-md-none">MENU</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 navbar-glass">
+        <div class="max-w-7xl mx-auto px-6">
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="product.html" class="nav-item nav-link">Products</a>  
-                        <!-- <a href="ourwork.html" class="nav-item nav-link">Our Work</a>            -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>                                
-                    <label class="toggle-switch-icon">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider">
+            <div class="flex items-center justify-between py-4">
+
+                <a href="#">
+                    <img src="img/logo.jpg"
+                         class="h-20 rounded-2xl"
+                         alt="logo">
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav class="hidden md:flex items-center gap-8 font-semibold uppercase text-sm">
+
+                <a href="./index.html" class="theme-text">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./product.html">Products</a>
+                <a href="./contact.html">Contact</a>
+
+                </nav>
+
+                <div class="flex items-center gap-4">
+
+                    <!-- THEME TOGGLE -->
+                   <div class="theme-toggle" id="themeToggle">
                         <i class="fas fa-sun sun-icon"></i>
                         <i class="fas fa-moon moon-icon"></i>
-                    </span>
-                    </label>
+                    </div>
+
+                    <!-- BOOK BUTTON -->
+                    <a href="./contact.html"
+                       class="hidden md:inline-flex px-6 py-3 rounded-full btn-theme font-bold">
+                        Book Now
+                    </a>
+
+                    <!-- MOBILE BUTTON -->
+                    <button id="menuBtn"
+                            class="md:hidden text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
                 </div>
-            </nav>
+
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu"
+                 class="mobile-menu flex-col gap-5 py-5 md:hidden">
+
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./product.html">Products</a>
+                <a href="./contact.html">Contact</a>
+
+                <a href="./contact.html"
+                   class="btn-theme py-3 rounded-full text-center font-bold">
+                    Book Now
+                </a>
+
+            </div>
+
         </div>
-    </div>
+    </header>
 
-    <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active col-12 col-md-16">
-                <video class="vid d-block w-100" autoplay muted loop plays inline>
-                <source src="img/Detailing-One.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-                    <h3>Detailing</h3>
-                    <h1>Keep your Car Newer</h1>
-                    <!-- <p>Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac</p>
-                    <a class="btn btn-primary" href="#">Explore More</a> -->
+    <!-- HERO -->
+    <section class="relative h-screen overflow-hidden">
+
+        <video autoplay muted loop playsinline
+               class="absolute inset-0 w-full h-full object-cover">
+
+            <source src="img/Detailing-One.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="relative z-10 h-full flex items-center">
+
+            <div class="max-w-7xl mx-auto px-6 w-full">
+
+                <div class="max-w-3xl">
+
+                    <p class="theme-text uppercase tracking-[5px] font-semibold mb-4">
+                        Premium Car Detailing
+                    </p>
+
+                    <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+                        Keep Your Car Looking Brand New
+                    </h1>
+
+                    <p class="text-lg text-muted leading-relaxed mb-8">
+                        Premium nano detailing, ceramic coating, paint correction and luxury vehicle care.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+
+                        <a href="#services"
+                           class="px-8 py-4 rounded-full btn-theme font-bold">
+                            Explore Services
+                        </a>
+
+                        <a href="https://wa.me/971558503647"
+                           class="px-8 py-4 rounded-full border border-white hover:bg-white hover:text-black transition">
+                            Contact Us
+                        </a>
+
+                    </div>
+
                 </div>
+
             </div>
-            <div class="carousel-item col-12 col-md-16">
-                <video class="vid d-block w-100" autoplay muted loop plays inline>
-                <source src="img/Detailing-Two.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-                    <h3>Detailing</h3>
-                    <h1>Quality service for you</h1>
-                    <!-- <p>Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis orci sodales</p>
-                    <a class="btn btn-primary" href="#">Explore More</a> -->
-                </div>
-            </div>
-            <div class="carousel-item col-12 col-md-16">
-                 <video class="vid d-block w-100" autoplay muted loop plays inline>
-                <source src="img/Detailing-Three.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-                    <h3>Interior and Exterior Detailing</h3>
-                    <!-- <p>Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam</p>
-                    <a class="btn btn-primary" href="#">Explore More</a> -->
-                </div>
-            </div>
+
         </div>
 
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+    </section>
 
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-    </div>
+    <!-- TOP INFO -->
+    <section class="section-spacing section-dark">
 
-    <div class="about">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-img">
-                        <img src="img/about.jpg" alt="Image">
-                    </div>
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="glass-card text-center">
+
+                    <i class="far fa-clock text-5xl theme-text mb-5"></i>
+
+                    <h3 class="text-2xl font-bold mb-3">
+                        Opening Hours
+                    </h3>
+
+                    <p class="text-muted">
+                        Mon - Sat, 8AM - 5PM
+                    </p>
+
                 </div>
-                <div class="col-lg-6">
-                    <div class="section-header text-left">
-                        <p class="display-6 fw-bold">About Us</p>
-                        <h2>Car Detailing</h2>
-                    </div>
-                    <div class="about-content">
-                        <p>
-                          At KRI, we’re committed to delivering the highest standard of automotive care with a focus 
-                          on innovation, quality, and long-lasting results. Specializing in nano detailing, ceramic coating,
-                           and professional car care services, we help preserve and protect your vehicle — inside and out.
-                        </p>
-                        <ul>
-                            <li><i class="far fa-check-circle"></i> Nano Detailing</li>
-                            <li><i class="far fa-check-circle"></i> Ceramic Coating</li>
-                            <li><i class="far fa-check-circle"></i> Paint Correction</li>
-                            <li><i class="far fa-check-circle"></i> Interior Detailing</li>
-                            <li><i class="far fa-check-circle"></i> Headlight Restoration</li>
-                            <li><i class="far fa-check-circle"></i> Engine Bay Cleaning</li>
-                        </ul>
-                        <a class="btn btn-custom" href="#">Learn More</a>
-                    </div>
+
+                <div class="glass-card text-center">
+
+                    <i class="fa fa-phone text-5xl theme-text mb-5"></i>
+
+                    <h3 class="text-2xl font-bold mb-3">
+                        Call Us
+                    </h3>
+
+                    <p class="text-muted">
+                        +971 558503647
+                    </p>
+
                 </div>
+
+                <div class="glass-card text-center">
+
+                    <i class="fa fa-envelope text-5xl theme-text mb-5"></i>
+
+                    <h3 class="text-2xl font-bold mb-3">
+                        Email
+                    </h3>
+
+                    <p class="text-muted">
+                        info@krinanodetailing.com
+                    </p>
+
+                </div>
+
             </div>
-        </div>
-    </div>
 
-    <div class="service">
-        <div class="container-fluid">
-            <div class="section-header text-center">
-                <p>What We Do</p>
-                <h2>Premium Detailing Services</h2>
-            </div>
-            <!-- <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="icons/car-wash-svgrepo-com.svg" width="50" height="50" alt="Car Wash" class="car-detail">                    
-                        <h3>Exterior Washing</h3>
-                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="icons/car-service-svgrepo-com.svg" width="50" height="50" alt="Car Wash" class="car-detail"> 
-                        <h3>Interior Washing</h3>
-                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="icons/vacuum-cleaner-floor-svgrepo-com.svg" width="50" height="50" alt="Car Wash" class="car-detail"> 
-                        <h3>Vacuum Cleaning</h3>
-                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="icons/car-seat-svgrepo-com.svg" width="50" height="50" alt="Car Wash" class="car-detail"> 
-                        <h3>Seats Washing</h3>
-                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="icons/windshield-washer-svgrepo-com.svg" width="50" height="50" alt="Car Wash" class="car-detail"> 
-                        <h3>Window Wiping</h3>
-                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="icons/tint-svgrepo-com.svg" width="50" height="50" alt="Car Wash" class="car-detail"> 
-                        <h3>Wet Cleaning</h3>
-                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="icons/oil-can-solid-svgrepo-com.svg" width="50" height="50" alt="Car Wash" class="car-detail"> 
-                        <h3>Oil Changing</h3>
-                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="icons/break-svgrepo-com.svg" width="50" height="50" alt="Car Wash" class="car-detail"> 
-                        <h3>Brake Reparing</h3>
-                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
-                    </div>
-                </div>
-            </div> -->
         </div>
-    </div>
 
-    <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-user"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">350</h3>
-                            <p>Engineers & Workers</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-users"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">1500</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="facts-item">
-                        <i class="fa fa-check"></i>
-                        <div class="facts-text">
-                            <h3 data-toggle="counter-up">5000</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                    </div>
-                </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section-spacing">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-20">
+
+                <p class="theme-text uppercase tracking-[5px] font-semibold mb-3">
+                    What We Do
+                </p>
+
+                <h2 class="text-5xl font-black">
+                    Premium Detailing Services
+                </h2>
+
             </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="glass-card">
+
+                    <i class="fa-solid fa-car-side text-5xl theme-text mb-6"></i>
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Nano Detailing
+                    </h3>
+
+                    <p class="text-muted">
+                        Advanced nano detailing for gloss and long lasting protection.
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <i class="fa-solid fa-shield text-5xl theme-text mb-6"></i>
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Ceramic Coating
+                    </h3>
+
+                    <p class="text-muted">
+                        Premium ceramic protection with hydrophobic technology.
+                    </p>
+
+                </div>
+
+                <div class="glass-card">
+
+                    <i class="fa-solid fa-spray-can-sparkles text-5xl theme-text mb-6"></i>
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Paint Correction
+                    </h3>
+
+                    <p class="text-muted">
+                        Restore your paint and remove swirl marks professionally.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
-    </div>
 
-    <!-- <div class="price">
-        <div class="container-fluid">
-            <div class="section-header text-center">
-                <p>Detailing Plan</p>
-                <h2>Choose Your Plan</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="price-item">
-                        <div class="price-header">
-                            <h3>Basic Detailing</h3>
-                            <h2><span>$</span><strong>25</strong><span>.99</span></h2>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li><i class="far fa-check-circle"></i> Nano Detailing</li>
-                                <li><i class="far fa-check-circle"></i> Ceramic Coating</li>
-                                <li><i class="far fa-check-circle"></i> Paint Correction</li>
-                                <li><i class="far fa-times-circle"></i> Interior Detailing</li>
-                                <li><i class="far fa-times-circle"></i> Headlight Restoration</li>
-                                <li><i class="far fa-times-circle"></i> Engine Bay Cleaning</li>
-                            </ul>
-                        </div>
-                        <div class="price-footer">
-                            <a class="btn btn-custom" href="#">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="price-item featured-item">
-                        <div class="price-header">
-                            <h3>Premium Cleaning</h3>
-                            <h2><span>$</span><strong>35</strong><span>.99</span></h2>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                 <li><i class="far fa-check-circle"></i> Nano Detailing</li>
-                                <li><i class="far fa-check-circle"></i> Ceramic Coating</li>
-                                <li><i class="far fa-check-circle"></i> Paint Correction</li>
-                                <li><i class="far fa-check-circle"></i> Interior Detailing</li>
-                                <li><i class="far fa-check-circle"></i> Headlight Restoration</li>
-                                <li><i class="far fa-times-circle"></i> Engine Bay Cleaning</li>
-                            </ul>
-                        </div>
-                        <div class="price-footer">
-                            <a class="btn btn-custom" href="#">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="price-item">
-                        <div class="price-header">
-                            <h3>Complex Cleaning</h3>
-                            <h2><span>$</span><strong>49</strong><span>.99</span></h2>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li><i class="far fa-check-circle"></i> Nano Detailing</li>
-                                <li><i class="far fa-check-circle"></i> Ceramic Coating</li>
-                                <li><i class="far fa-check-circle"></i> Paint Correction</li>
-                                <li><i class="far fa-check-circle"></i> Interior Detailing</li>
-                                <li><i class="far fa-check-circle"></i> Headlight Restoration</li>
-                                <li><i class="far fa-check-circle"></i> Engine Bay Cleaning</li>
-                            </ul>
-                        </div>
-                        <div class="price-footer">
-                            <a class="btn btn-custom" href="#">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    </section>
 
-    <div class="location">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-15">
-                    <div class="section-header text-center">
-                        <p>Care Points</p>
-                        <!-- <h2>Care Points</h2> -->
-                    </div>
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-md-6 text-center">
-                            <div class="location-item">
-                                <i class="fa fa-map-marker-alt"></i>
-                                <div class="location-text">
-                                    <h3>Car Detailing Point</h3>
-                                    <p>Colombo, Sri Lanka</p>
-                                    <p><strong>Call:</strong>+971 558503647</p>
-                                </div>
-                            </div>
-                        </div>                     
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="location-form text-center">
-                        <h3>Request for a car Detailing</h3>
-                       <form id="contact-form">
-                            <div class="control-group mb-3">
-                                <input type="text" name="name" class="form-control" placeholder="Name" required>
-                            </div>
-                            <div class="control-group mb-3">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required>
-                            </div>
-                            <div class="control-group mb-3">
-                                <textarea name="message" class="form-control" placeholder="Description" required></textarea>
-                            </div>
+    <!-- CONTACT -->
+    <section class="section-spacing section-dark">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- LEFT -->
+                <div class="contact-box glass-card">
+
+                    <h2 class="text-4xl font-black mb-10">
+                        Contact Information
+                    </h2>
+
+                    <div class="space-y-8">
+
+                        <div class="flex gap-5">
+                            <i class="fa fa-map-marker-alt text-2xl theme-text"></i>
+
                             <div>
-                                <button class="btn btn-custom" type="submit">Send Request</button>
+                                <h4 class="font-bold text-xl">
+                                    Location
+                                </h4>
+
+                                <p class="text-muted">
+                                    Colombo, Sri Lanka
+                                </p>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="testimonial">
-        <div class="container-fluid">
-            <div class="section-header text-center">
-                <p>Testimonial</p>
-                <h2>What our clients say</h2>
-            </div>
-            <div class="owl-carousel testimonials-carousel">
-                <div class="testimonial-item">
-                    <img src="img/testimonial-1.jpg" alt="Image">
-                    <div class="testimonial-text">
-                        <h3>Client Name</h3>
-                        <h4>Profession</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor auctor gravid
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <img src="img/testimonial-2.jpg" alt="Image">
-                    <div class="testimonial-text">
-                        <h3>Client Name</h3>
-                        <h4>Profession</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor auctor gravid
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <img src="img/testimonial-3.jpg" alt="Image">
-                    <div class="testimonial-text">
-                        <h3>Client Name</h3>
-                        <h4>Profession</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor auctor gravid
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <img src="img/testimonial-4.jpg" alt="Image">
-                    <div class="testimonial-text">
-                        <h3>Client Name</h3>
-                        <h4>Profession</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor auctor gravid
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-    <div class="footer">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-contact">
-                        <h2>Get In Touch</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>  Colombo, Sri Lanka</p>
-                        <p><i class="fa fa-phone"></i>   +971 558503647</p>
-                        <p><i class="fa fa-envelope"></i>  info@krinanodetailing.com</p>
-                        <div class="footer-social">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                            <a class="btn" href="https://www.instagram.com/krinanodetailing?igsh=amVqcjIzYmQ3YTR6"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
+
+                        <div class="flex gap-5">
+                            <i class="fa fa-phone text-2xl theme-text"></i>
+
+                            <div>
+                                <h4 class="font-bold text-xl">
+                                    Phone
+                                </h4>
+
+                                <p class="text-muted">
+                                    +971 558503647
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-link">
-                        <h2>Popular Links</h2>
-                        <a href="about.html">About Us</a>
-                        <a href="service.html">Service</a>
-                        <a href="product.html">Products</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
+
+                <!-- RIGHT -->
+                <div class="contact-box glass-card">
+
+                    <form id="contact-form" class="space-y-6">
+
+                        <input type="text"
+                               placeholder="Your Name"
+                               class="w-full px-5 py-4 rounded-2xl outline-none">
+
+                        <input type="email"
+                               placeholder="Your Email"
+                               class="w-full px-5 py-4 rounded-2xl outline-none">
+
+                        <textarea rows="6"
+                                  placeholder="Tell us about your vehicle..."
+                                  class="w-full px-5 py-4 rounded-2xl outline-none"></textarea>
+
+                        <button class="w-full py-4 rounded-2xl btn-theme font-bold">
+                            Send Request
+                        </button>
+
+                    </form>
+
                 </div>
-                <div class="col-lg-4 col-md-9">
-                    <div class="footer-link">
-                        <h2>Useful Links</h2>
-                        <a href="#">Terms of use</a>
-                        <a href="#">Privacy policy</a>
-                        <a href="#">Cookies</a>
-                        <a href="#">Help</a>
-                        <a href="#">FQAs</a>
-                    </div>
-                </div>    
+
             </div>
+
         </div>
-        <div class="container-fluid copyright">
-            <!-- <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p> -->
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-dark">
+
+        <div class="max-w-7xl mx-auto px-6 py-16">
+
+            <div class="text-center">
+
+                <img src="img/logo.jpg"
+                     class="h-24 rounded-2xl mx-auto mb-8">
+
+                <p class="text-muted mb-8 max-w-2xl mx-auto">
+                    Premium automotive detailing and ceramic coating specialists delivering long-lasting protection.
+                </p>
+
+                <div class="flex justify-center gap-5 text-2xl mb-8">
+
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
+
+                <p class="text-muted">
+                    © 2026 KRI Nano Detailing. All Rights Reserved.
+                </p>
+
+            </div>
+
         </div>
-    </div>
 
-    <div>
-        <a href="https://wa.me/971558503647" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
-        </a>
-    </div>
-    <div>
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    </div>
-    <div id="loader" class="show">
-        <div class="loader"></div>
-    </div>
+    </footer>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/971558503647"
+       target="_blank"
+       class="whatsapp-float">
 
-<div id="form-status" style="display:none;" class="alert alert-success mt-3">
-  Thank you! Your request has been sent.
-</div>
-     <script src="javascript/main.js"></script>
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <a href="#" class="back-to-top hidden">
+    
+        <i class="fas fa-arrow-up"></i>
+
+    </a>
+
 </body>
 </html>
- 
