@@ -153,3 +153,50 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+
+const products = {
+    AED: {
+        price: "AED 25",
+        link: "https://buy.stripe.com/test_dRm9AUeeIgDd7RA3tH2cg00"
+    },
+    LKR: {
+        price: "LKR 2,250",
+        link: "https://buy.stripe.com/test_bJe8wQfiMcmX6Nw3tH2cg01"
+    }
+};
+
+let currentCurrency = "AED";
+
+function loadProduct(currency) {
+
+    currentCurrency = currency;
+
+    document.getElementById("price-acs").innerText =
+        products[currency].price;
+
+    document.getElementById("buyBtn").href =
+        products[currency].link;
+}
+
+function switchCurrency() {
+
+    loadProduct(
+        currentCurrency === "AED"
+            ? "LKR"
+            : "AED"
+    );
+}
+
+fetch("https://ipapi.co/json/")
+    .then(r => r.json())
+    .then(data => {
+
+        if (data.country_code === "LK") {
+            loadProduct("LKR");
+        } else {
+            loadProduct("AED");
+        }
+
+    })
+    .catch(() => loadProduct("AED"));
